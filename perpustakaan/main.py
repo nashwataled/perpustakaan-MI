@@ -17,6 +17,8 @@ class Perpustakaan:
         print("[4] Hapus Data Buku")
         print("[5] Lihat Daftar Peminjam Buku")
         print("[6] Tambah Peminjam Buku")
+        print("[7] Hapus Data Peminjam Buku")
+        print("[8] Keluar dari Aplikasi")
 
 
         kode = int(input("\nMasukkan kode menu yang ingin diakses : "))
