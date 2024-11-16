@@ -45,6 +45,35 @@ class Buku:
         self.daftarbuku = [data for data in self.daftarbuku if data[0].lower() != judul.lower()]
         print("\n[Data Buku Telah Terhapus]")
         input("\nTekan [ENTER] untuk kembali ke menu.")
+
+    class Peminjam:
+    def _init_(self):
+        self.daftarpeminjam = []
+
+    def lihat_daftarpeminjam(self):
+        os.system("cls")
+        print("DAFTAR PEMINJAM BUKU")
+        print("=" * 50)
+        if not self.daftarpeminjam:
+            print("\n[Data tidak tersedia]")
+        else:
+            for i, peminjam in enumerate(self.daftarpeminjam, start=1):
+                print(f"{i}. {peminjam}")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
+
+    def tambah_peminjam(self):
+        os.system("cls")
+        nama = input("Masukkan nama peminjam: ")
+        self.daftarpeminjam.append(nama)
+        print("[Data Peminjam Berhasil Ditambahkan]")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
+
+    def hapus_peminjam(self):
+        os.system("cls")
+        nama = input("Masukkan nama peminjam yang ingin dihapus: ")
+        self.daftarpeminjam = [peminjam for peminjam in self.daftarpeminjam if peminjam.lower() != nama.lower()]
+        print("\n[Data Peminjam Telah Terhapus]")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
     
 
 
