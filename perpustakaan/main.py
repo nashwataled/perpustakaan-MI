@@ -92,6 +92,37 @@ class Perpustakaan:
         input("\nTekan [ENTER] untuk kembali ke menu.")
         self.tampilkan_menu()
 
+   def lihat_daftarpeminjam(self):
+        os.system("cls")
+        print("DAFTAR PEMINJAM BUKU")
+        print("=" * 50)
+        if not self.daftarpeminjam:
+            print("\n[Data tidak tersedia]")
+        else:
+            for i, (nama, judul, tanggal) in enumerate(self.daftarpeminjam, start=1):
+                print(f"{i}. {nama} | {judul} | {tanggal}")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
+        self.tampilkan_menu()
+
+    def tambah_peminjam(self):
+        os.system("cls")
+        print("TAMBAH PEMINJAM BUKU")
+        nama = input("Nama Peminjam : ")
+        judul = input("Judul Buku : ")
+        tanggal = input("Tanggal Peminjaman : ")
+        self.daftarpeminjam.append((nama, judul, tanggal))
+        print("[Data Peminjam Berhasil Ditambahkan]")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
+        self.tampilkan_menu()
+
+    def hapus_peminjam(self):
+        os.system("cls")
+        nama = input("Masukkan Nama Peminjam yang Ingin Dihapus : ")
+        self.daftarpeminjam = [data for data in self.daftarpeminjam if data[0].lower() != nama.lower()]
+        print("\n[Data Peminjam Telah Terhapus]")
+        input("\nTekan [ENTER] untuk kembali ke menu.")
+        self.tampilkan_menu()
+
     
 
 
