@@ -39,13 +39,12 @@ class Buku:
 
     def cari_buku(self):
         os.system("cls")
-        judul = input("\nMasukan judul buku yang ingin dicari: ")
+        kata_kunci = input("\nMasukkan kata kunci untuk mencari buku: ").lower()
         found = False
         for data in self.daftarbuku:
-            if data[0].lower() == judul.lower():
+            if kata_kunci in data[0].lower():  
                 print(f"Buku ditemukan: {data[0]} | {data[1]} | {data[2]}")
                 found = True
-                break
         if not found:
             print("Hasil pencarian tidak ditemukan.")
         input("\nTekan [ENTER] untuk kembali ke menu.")
