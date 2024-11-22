@@ -3,7 +3,28 @@ import time
 
 class Buku:
     def __init__(self):
-        self.daftarbuku = []
+        self.daftarbuku = [
+            ("Matematika untuk SMA Kelas 10", "Tim Penyusun", 2021),
+            ("Fisika Dasar untuk SMA Kelas 11", "Dr. Budi Santoso", 2020),
+            ("Kimia untuk SMA Kelas 12", "Dr. Tri Widodo", 2019),
+            ("Biologi untuk SMP Kelas 9", "Dr. Ratna Dewi", 2021),
+            ("Bahasa Inggris untuk SMA Kelas 10", "Tim Penerbit", 2020),
+            ("Sejarah Indonesia untuk SMA Kelas 11", "Ahmad Fauzan", 2018),
+            ("Ekonomi untuk SMA Kelas 10", "Dr. Dian Kurnia", 2019),
+            ("Sosiologi untuk SMA Kelas 12", "Dr. Indah Permatasari", 2020),
+            ("Geografi untuk SMA Kelas 10", "Tim Geosmart", 2021),
+            ("Pendidikan Agama Islam Kelas 9", "Ust. Muhammad Rasyid", 2020),
+            ("Matematika untuk SMP Kelas 8", "Tim Penyusun", 2021),
+            ("Ilmu Pengetahuan Alam untuk SMP Kelas 7", "Tim Penerbit", 2019),
+            ("Bahasa Indonesia untuk SMA Kelas 12", "Dr. Andi Wijaya", 2020),
+            ("Pendidikan Pancasila dan Kewarganegaraan untuk SMA", "Dr. Sari Lestari", 2021),
+            ("Teknologi Informasi dan Komunikasi untuk SMA", "Ir. Eko Prasetyo", 2020),
+            ("Kewirausahaan untuk SMA Kelas 11", "Dr. Sri Utami", 2020),
+            ("Matematika Terapan untuk SMK", "Dr. Bambang Sugiarto", 2018),
+            ("Fisika Modern untuk SMA", "Prof. Yuni Susanti", 2021),
+            ("Bahasa Jepang Dasar untuk SMA", "Hiroshi Yamamoto", 2020),
+            ("Seni Budaya untuk SMA Kelas 10", "Tim Seni Nusantara", 2019)
+        ]
 
     def lihat_daftarbuku(self):
         os.system("cls")
@@ -48,7 +69,13 @@ class Buku:
 
 class Peminjam:
     def _init_(self):
-        self.daftarpeminjam = []
+        self.daftarpeminjam = [
+            "Rina Suryani - Buku: Matematika untuk SMA Kelas 10",
+            "Andi Pratama - Buku: Fisika Dasar untuk SMA Kelas 11",
+            "Siti Aminah - Buku: Kimia untuk SMA Kelas 12",
+            "Budi Santoso - Buku: Biologi untuk SMP Kelas 9",
+            "Ani Lestari - Buku: Sejarah Indonesia untuk SMA Kelas 11"
+        ]
 
     def lihat_daftarpeminjam(self):
         os.system("cls")
