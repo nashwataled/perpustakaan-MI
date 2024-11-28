@@ -153,7 +153,3 @@ class Menu:
 
 
     
-
-if __name__ == "__main__":
-    perpustakaan = Perpustakaan()
-    perpustakaan.tampilkan_menu()
